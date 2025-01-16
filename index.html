@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="sidebarApp">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,52 +13,78 @@
   </head>
   <body ng-controller="SidebarController">
     <aside class="sidebar" ng-class="{'collapsed': isCollapsed}">
+      <!-- Sidebar header -->
       <header class="sidebar-header">
-        <a href="#" class="header-logo"> <img src="logo.png" alt="" /></a>
-
+        <a href="#" class="header-logo">
+          <img src="logo.png" alt="CodingNepal">
+        </a>
         <button class="toggler sidebar-toggler" ng-click="toggleSidebar()">
           <span class="material-symbols-rounded">chevron_left</span>
         </button>
+        <button class="toggler menu-toggler" ng-click="toggleSidebar()">
+          <span class="material-symbols-rounded">menu</span>
+        </button>
       </header>
+  
 
       <nav class="sidebar-nav">
         <ul class="nav-list primary-nav">
           <li class="nav-item">
             <a href="" class="nav-link">
-            <img src="" alt="" />
+            <img src="icons8-home-50.png" alt="" />
             <span class="nav-label">Home</span>
         </a>
-            <span class="ToolTip">Home</span>
+            <span class="toolTip">Home</span>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link"
+            <a href="Service Request.png" class="nav-link"
               ><img src="" alt="" /><span class="nav-label"
-                >Service RequesT</span
+                >Service Request</span
               ></a
-            ><span class="ToolTip">Home</span>
+            ><span class="toolTip">Service Request</span>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link"
               ><img src="" alt="" /><span class="nav-label">Knowledge</span></a
-            ><span class="ToolTip">Home</span>
+            ><span class="toolTip">Knowledge</span>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link"
-              ><img src="" alt="" /><span class="nav-label">Dashboard</span></a
-            ><span class="ToolTip">Home</span>
+              ><img src="Dashboard.png" alt="" /><span class="nav-label">Dashboard</span></a
+            ><span class="toolTip">Dashboard</span>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link"
-              ><img src="" alt="" /><span class="nav-label">E-Caalog</span></a
-            ><span class="ToolTip">Home</span>
+              ><img src="" alt="" /><span class="nav-label">E-Catalog</span></a
+            ><span class="toolTip">E-Catalog</span>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link"
-              ><img src="" alt="" /><span class="nav-label">HR PorTal</span></a
-            ><span class="ToolTip">Home</span>
+              ><img src="" alt="" /><span class="nav-label">WorkSpace</span></a
+            ><span class="toolTip">WorkSpace</span>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"
+              ><img src="" alt="" /><span class="nav-label">HR Portal</span></a
+            ><span class="toolTip">HR Portal</span>
           </li>
         </ul>
+        <footer class="footer-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="" class="nav-link"
+                ><img src="" alt="" /><span class="nav-label">Profile</span></a
+              ><span class="toolTip">Profile</span>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link"
+                ><img src="" alt="" /><span class="nav-label">Logout</span></a
+              ><span class="toolTip">Logout</span>
+          </ul>
+        </footer>
       </nav>
+      
     </aside>
+    <script src="script.js"></script>
   </body>
 </html>
